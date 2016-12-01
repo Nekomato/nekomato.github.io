@@ -1,0 +1,15 @@
+div.oleg {
+    text-align: center;
+    color: #FF9933;
+    font-size: 2em;
+    margin: auto;
+    widyh: 30%;
+    padding: 6px 10px;
+    background: #eee;
+    width: 30%;
+    border: 1px solid #FF9933;
+    border-radius: 40px;
+}
+div.oleg:hover {
+    background: #fff;
+}
