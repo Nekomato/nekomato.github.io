@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    vertical-align: baseline; 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, button{
+    background: #000;
+    color: #EFEFEF;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 120%;
+}
+p {
+
+    font-size: 1.2em;
+    color: #DDD;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'EB Garamond', serif;
+}
+
+
+
+h2 {
+    font-size: 180%;
+}
+
+.test {
+    width:300px;
+    
+}
+header {
+    // max-width: 1040px;
+    width: 100%;
+    border-bottom: 2px solid #FEFEFE;
+    margin: auto;
+    position: relative;
+} 
+
+.logo{
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 400%;
+    color: #F1B43F;
+    padding: 14px 20px;
+}
+
+.logo-one {
+    color: #BE1603;
+}
+
+.top-menu {
+     margin-top: 35px;
+     position: absolute;
+     right:0;
+     top:0;
+}
+
+#menu-icon {
+    display: none;
+    background: url(../images/hamburger.png) no-repeat center;
+}
+
+.top-menu li {
+
+    display:inline-block;
+    width: 100px;
+    text-align: center;
+    margin:0;
+}
+
+.top-menu li a {
+    display: block;
+    padding: 14px 20px;
+    color: #DDD;
+    font-size: 140%;
+    // border-left: 1px solid #DDD;
+}
+
+.top-menu li a.active {
+    padding: 14px 20px;
+    color: #F1B43F;
+}
+
+.top-menu li a:hover {
+    color: #F1B43F;
+    text-decoration: none;
+
+}
+.top-menu li a.cart {
+    background: green;
+    border-radius: 5px;
+}
+
+// .container {
+//     max-width: 1040px;
+//     margin: auto;
+// }
+
+main {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.hello {
+    position: relative;
+}
+
+
+.hello::after {
+  content: "";
+  background: url(../images/doom1.jpg);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.hello img{
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    border-radius: 2px;
+
+}
+
+.hello-content {
+    text-align: center;
+    padding: 75px;
+    transition: all 0.3s;
+
+}
+
+.hello-content p { 
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.hello-content button {
+    border: 0;
+    color: #DDD;
+    background: green;
+    font-size: 110%;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.hello-content button:hover {
+    background: #393;
+}
+
+.items {
+    margin-top: 30px;
+    border-top: 2px solid #EFEFEF;
+}
+
+.items h2 {
+    color: #F1B43F;
+    padding: 25px 10px;
+}
+
+
+.game {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+}
+
+.game:hover {
+    box-shadow: 1px 1px 3px #ddd, 0px 0px 10px #999;
+}
+
+.game img {
+    width: 100%;
+    // height: 300px;
+}
+
+.desc-text, .cost {
+    display: inline-block;
+}
+.desc-text {
+    padding: 5px 10px;
+    background: #fff;
+    color: black;
+    width:70%;
+    text-align: center;
+}
+
+.cost {
+    float: right;
+    background: green;
+    color: #DDD;
+    margin: 0;
+    padding: 5px 10px;
+    width:30%;
+    text-align: center;
+}
+
+aside {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.right-menu {
+    text-align: left;
+}
+
+aside h3 {
+    font-size: 20px;
+    color: #BE1603;
+    padding: 8px 20px;
+}
+.right-menu li a{
+    display: block;
+    padding: 8px 20px;
+    color: #DDD;
+    font-size: 120%;
+    margin-left: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #340405;
+    padding: 55px;
+    margin-top: 20px;
+    border-top: 2px solid #742425;
+}
+
+@media screen and (max-width: 855px) {
+
+    .logo {
+        font-size: 200%;
+    }
+
+
+    #menu-icon {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 10px;
+        height: 10px;
+        padding: 20px;
+    }
+    .top-menu {
+        display: none;
+        position: absolute;
+        padding: 6px;
+        background: rgba(1,1,1,0.6);
+        border: 1px solid #fff;
+        right: 20px;
+        top: 5px;
+        width: 70%;
+        border-radius: 2px 0 2px 2px;
+        z-index: 1;
+
+    }
+    .top-menu li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    .top-menu li a{
+        padding:8px;
+        border:1px solid rgba(1,1,1,0);;
+    }
+    nav:hover ul{
+        display: block;
+
+    }
+
+    .hello-content {
+       padding: 20px;
+    }
+}
