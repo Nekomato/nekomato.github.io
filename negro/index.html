@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  var n = 10;
+  var str = ""
+  while (true) {
+    str = n + " негритят пошли купаться в море " +
+      n + " негритят резвились на просторе. " +
+      "1 из них утоп ему сковали гроб. И вот вам результат " + n + " негритят";
+    if (n == 2) {
+      str = str.slice(0, str.indexOf("1")) +
+        "1 пошел ко дну, другой нашел жену. И вот вам результат 10 негритят";
+    n = 11;
+    }
+    alert(str);
+    n -= 1;
+  }
+</script>
+</body>
+</html>
