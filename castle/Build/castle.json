@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "castle.data.unityweb",
+"asmCodeUrl": "castle.asm.code.unityweb",
+"asmMemoryUrl": "castle.asm.memory.unityweb",
+"asmFrameworkUrl": "castle.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
